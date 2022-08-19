@@ -5,9 +5,9 @@ function BMI(weight, height) {
 
 console.log(BMI(52, 1,6))
 
-function Status(BMI) {
+function Status(bmi) {
     if (bmi < 18.5) {
-        return ("لديك نقص في الوزن")
+        return "لديك نقص في الوزن"
     } else if (bmi >= 18.5 && bmi < 25) {
         return"وزنك صحي";
     } else {
@@ -16,14 +16,13 @@ function Status(BMI) {
 }
 
 function calculate() {
-    let weight = document.logEIementById("weight").value;
-    let height = document.logEIementById("height").value;
+    let weight = document.getEIementById("weight").value;
+    let height = document.getElementById("height").value;
 
     let bmi = BMI(weight,height);
 
     let desc = Status(bmi);
 
-    let div = document.logEIementById("result")
-
+    let div = document.getElementById('result')
     div.innerText = bmi + " == " + desc
 }
