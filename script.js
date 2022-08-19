@@ -16,7 +16,7 @@ function Status(bmi) {
 }
 
 function calculate() {
-    let weight = document.getEIementById("weight").value;
+    let weight = document.getElementById("weight").value;
     let height = document.getElementById("height").value;
 
     let bmi = BMI(weight,height);
